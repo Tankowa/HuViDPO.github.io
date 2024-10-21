@@ -56,24 +56,26 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://scholar.google.com.hk/citations?view_op=list_works&hl=zh-CN&authuser=2&user=CHuMUyEAAAAJ" target="_blank">Lifan Jiang</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jiahui Zhang</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Guanxiao Tong</a>，</span>
+                    <span class="author-block">
+                      <a href="Fourth AUTHOR PERSONAL LINK" target="_blank">Boxi Wu</a><sup>*</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">State Key Lab of CAD&CG, Zhejiang University<br>CVPR 2025</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/abs/2404.07773" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -82,20 +84,9 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/Tankowa/DPVDM" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -106,7 +97,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2404.07773" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -148,7 +139,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            With the rapid development of AI-generated content, text-to-image (T2I) technology based on diffusion models has made significant progress, driving innovations in text-to-video (T2V) generation methods. However, existing T2V generation methods often struggle to meet human visual preferences due to the lack of high-quality, large-scale training data, and they demand substantial computational resources. To address these challenges, we propose the DPVDM method, which enhances human-centric alignment in T2V tasks through Direct Preference Optimization (DPO). Our approach fine-tunes the Video Diffusion Model (VDM) by constructing small-scale human preference datasets for each action category, thereby aligning VDM with human preferences and improving the subjective quality of generated videos. To reduce training costs, we use a small video dataset to learn a common motion pattern, applying Low-Rank Adaptation(LORA) to fine-tune the model, allowing it to complete the fine-tuning in one day on a single RTX4090 GPU. Subsequently, to address the issues of content overfitting and lack of flexibility, and to ensure temporal and spatial consistency, we optimized the spatio-temporal attention layers, further enhancing the coherence and visual appeal of the generated videos, ensuring smooth transitions between frames.
           </p>
         </div>
       </div>
