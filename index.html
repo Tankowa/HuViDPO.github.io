@@ -454,9 +454,95 @@
 </div>
 
 
-<!-- 父容器，使用 flexbox 布局 -->
+
+<div style="background-color: white; margin-right: auto; margin-left: auto;">
+  <div class="root-content" style="padding-top: 10px;width: 65%; padding-bottom: 10px;">
+      <h1 class="section-name">&#127902;&nbsp;&nbsp; The performance of our DPVDM in different style&nbsp;&nbsp;&#127902;</h1>
+      <table style="width: 100%;">
+          <tbody>
+            <tr class="result-row">
+              <td>
+                <div class="slider-container" style="width: 512px; height: 320px; position: relative; overflow: hidden;">
+                  <div class="slider" style="display: flex; width: 100%; height: 100%; transition: transform 0.5s ease;">
+                    <img src="answer/firework/5.gif" alt="Image 1" style="width: 512px; height: 320px;">
+                    <img src="answer/guitar/6.gif" alt="Image 2" style="width: 512px; height: 320px;">
+                    <img src="answer/waterfall/5.gif" alt="Image 3" style="width: 512px; height: 320px;">
+                    <img src="answer/waterfall/6.gif" alt="Image 4" style="width: 512px; height: 320px;">
+                  </div>
+                  <button class="prev" onclick="prevSlide()" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; cursor: pointer;">&#10094;</button>
+                  <button class="next" onclick="nextSlide()" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; cursor: pointer;">&#10095;</button>
+                </div>
+              </td>
+              <td>
+                <div class="slider-container" style="width: 512px; height: 320px; position: relative; overflow: hidden;">
+                  <div class="slider" style="display: flex; width: 100%; height: 100%; transition: transform 0.5s ease;">
+                    <img src="answer/guitar/8.gif" alt="Image 1" style="width: 512px; height: 320px;">
+                    <img src="answer/firework/11.gif" alt="Image 2" style="width: 512px; height: 320px;">
+                    <img src="answer/horse/3.gif" alt="Image 3" style="width: 512px; height: 320px;">
+                    <img src="answer/waterfall/10.gif" alt="Image 4" style="width: 512px; height: 320px;">
+                  </div>
+                  <button class="prev" onclick="prevSlide()" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; cursor: pointer;">&#10094;</button>
+                  <button class="next" onclick="nextSlide()" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; cursor: pointer;">&#10095;</button>
+                </div>
+              </td>
+            </tr>
+            
+                <tr class="prompt-row">
+                  <td colspan="1" align="center">Pixel-art-style</td>
+                  <td colspan="1" align="center">Claymation-style</td>
+                </tr>
+
+                <tr class="result-row">
+                  <td>
+                    <div class="slider-container" style="width: 512px; height: 320px; position: relative; overflow: hidden;">
+                      <div class="slider" style="display: flex; width: 100%; height: 100%; transition: transform 0.5s ease;">
+                        <img src="answer/rain/1.gif" alt="Image 1" style="width: 512px; height: 320px;">
+                        <img src="answer/helicopter/5.gif" alt="Image 2" style="width: 512px; height: 320px;">
+                        <img src="answer/birds_fly/5.gif" alt="Image 3" style="width: 512px; height: 320px;">
+                        <img src="answer/firework/9.gif" alt="Image 4" style="width: 512px; height: 320px;">
+                      </div>
+                      <button class="prev" onclick="prevSlide()" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; cursor: pointer;">&#10094;</button>
+                      <button class="next" onclick="nextSlide()" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; cursor: pointer;">&#10095;</button>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="slider-container" style="width: 512px; height: 320px; position: relative; overflow: hidden;">
+                      <div class="slider" style="display: flex; width: 100%; height: 100%; transition: transform 0.5s ease;">
+                        <img src="answer/firework/4.gif" alt="Image 1" style="width: 512px; height: 320px;">
+                        <img src="answer/waterfall/9.gif" alt="Image 2" style="width: 512px; height: 320px;">
+                        <img src="answer/guitar/3.gif" alt="Image 3" style="width: 512px; height: 320px;">
+                        <img src="answer/rain/8.gif" alt="Image 4" style="width: 512px; height: 320px;">
+                      </div>
+                      <button class="prev" onclick="prevSlide()" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; cursor: pointer;">&#10094;</button>
+                      <button class="next" onclick="nextSlide()" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; cursor: pointer;">&#10095;</button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="prompt-row">
+                  <td colspan="1" align="center">Realistic-style</td>
+                  <td colspan="1" align="center">Cartoon-style</td>
+                </tr>
+              
+          </tbody>
+      </table>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div style="align-items: center;">
 <div style="display: flex; justify-content: space-between; gap: 20px; background-color: white; padding: 10px;">
-  <!-- 滑动模块 1 -->
   <div style="background-color: white; height: 405px; width: 45%;">
       <div class="root-content">
           <h1 class="section-name">&#127916;&nbsp;&nbsp; Pixel-art-style &nbsp;&nbsp;&#127916;</h1>
@@ -473,7 +559,6 @@
       </div>
   </div>
 
-  <!-- 滑动模块 2 -->
   <div style="background-color: white; height: 405px; width: 45%;">
       <div class="root-content">
           <h1 class="section-name">&#127916;&nbsp;&nbsp; Claymation-style &nbsp;&nbsp;&#127916;</h1>
@@ -491,9 +576,7 @@
   </div>
 </div>
 
-<!-- 父容器，使用 flexbox 布局 -->
 <div style="display: flex; justify-content: space-between; gap: 20px; background-color: white; padding: 10px;">
-  <!-- 滑动模块 1 -->
   <div style="background-color: white; height: 405px; width: 45%;">
       <div class="root-content">
           <h1 class="section-name">&#127916;&nbsp;&nbsp; Realistic-style &nbsp;&nbsp;&#127916;</h1>
@@ -510,7 +593,6 @@
       </div>
   </div>
 
-  <!-- 滑动模块 2 -->
   <div style="background-color: white; height: 405px; width: 45%;">
       <div class="root-content">
           <h1 class="section-name">&#127916;&nbsp;&nbsp; Cartoon-style &nbsp;&nbsp;&#127916;</h1>
@@ -527,7 +609,7 @@
       </div>
   </div>
 </div>
-
+</div>  -->
 
 
 
