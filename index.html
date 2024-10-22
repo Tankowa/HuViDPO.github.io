@@ -1,58 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="DESCRIPTION META TAG">
+    <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+    <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+    <meta property="og:url" content="URL OF THE WEBSITE"/>
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png" />
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+    <title>DPVDM</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+    rel="stylesheet">
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="lamp.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .slider-container {
+            width: 50%; /* 滑动框宽度为页面的一半 */
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slider img {
+            width: 100%; /* 让图片宽度与滑动框一致 */
+            height: auto; /* 保持图片比例 */
+            object-fit: cover; /* 确保图片内容填充整个框 */
+        }
+
+        /* 左右切换按钮 */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        /* 其他页面元素 */
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, p {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
 
-  
 <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">DPVDM: Enhancing Video Generation through Direct Preference Optimization for Human-Centric Alignment</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -60,7 +117,7 @@
                 <span class="author-block">
                   <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jiahui Zhang</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Guanxiao Tong</a>，</span>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xiaotong Guan</a>,</span>
                     <span class="author-block">
                       <a href="Fourth AUTHOR PERSONAL LINK" target="_blank">Boxi Wu</a><sup>*</sup>
                   </span>
@@ -114,22 +171,7 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -137,7 +179,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
+        <div class="section-content-text">
           <p>
             With the rapid development of AI-generated content, text-to-image (T2I) technology based on diffusion models has made significant progress, driving innovations in text-to-video (T2V) generation methods. However, existing T2V generation methods often struggle to meet human visual preferences due to the lack of high-quality, large-scale training data, and they demand substantial computational resources. To address these challenges, we propose the DPVDM method, which enhances human-centric alignment in T2V tasks through Direct Preference Optimization (DPO). Our approach fine-tunes the Video Diffusion Model (VDM) by constructing small-scale human preference datasets for each action category, thereby aligning VDM with human preferences and improving the subjective quality of generated videos. To reduce training costs, we use a small video dataset to learn a common motion pattern, applying Low-Rank Adaptation(LORA) to fine-tune the model, allowing it to complete the fine-tuning in one day on a single RTX4090 GPU. Subsequently, to address the issues of content overfitting and lack of flexibility, and to ensure temporal and spatial consistency, we optimized the spatio-temporal attention layers, further enhancing the coherence and visual appeal of the generated videos, ensuring smooth transitions between frames.
           </p>
@@ -149,120 +191,234 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+<!-- pipeline -->
+<div style="background-color: white; margin-right: auto; margin-left: auto;">
+    <a name="method"></a>
+    <div class="root-content" style="padding-top: 10px; width: 65%;">
+        <h1 class="section-name">&#128293; Learn T2V Generation with Only <font style="color: red;">8~16</font> Videos &#128293;</h1>
+        <img src="static/images/pipeline.png" style="margin:auto; right: 0; left: 0; width: 75%; display: inline;">
+        <p class="section-content-text" style="padding-bottom: 20px;"><strong>Framework of the proposed LAMP.</strong> Our LAMP learns a motion pattern from a small video set and generates videos with the learned motion, which achieves the trade-off between training burden and generation freedom. We transfer text-to-video generation to the first-frame generation and subsequent-frame prediction, i.e., decoupling a video's contents and motions. During the training stage, We add noise and compute loss functions on all but the first frame. Moreover, only the parameters of newly added layers and the query linear layers of self-attention blocks are updated when tuning. During the inference stage, we use a T2I model to generate the first frame. The tuned model only works on denoising the latent features of subsequent frames with the guidance of user prompts.</p>
     </div>
-  </div>
 </div>
+
+<div style="background-color: #f5f5f5; margin-right: auto; margin-left: auto;">
+    <div class="root-content" style="padding-top: 10px; width: 65%; padding-bottom: 10px;">
+        <h1 class="section-name">&#127916;&nbsp;&nbsp; Text-to-Video Results &nbsp;&nbsp;&#127916;</h1>
+        <table style="width: 100%;">
+            <tbody>
+                <tr class="result-row">
+                    <td>
+                        <img src="answer/firework/1.gif" style="width: 256px; height: 160px;">
+                    </td>
+                    <td>
+                        <img src="answer/firework/2.gif" style="width: 256px; height: 160px;">
+                    </td>
+                    <td>
+                        <img src="answer/firework/6.gif" style="width: 256px; height: 160px;">
+                    </td>
+                </tr>
+                <tr class="prompt-row">
+                    <td>fireworks exploding over a calm ocean at night.</td>
+                    <td>fireworks exploding over a futuristic city skyline with neon lights.</td>
+                    <td>fireworks lighting up a stormy sky over the ocean.</td>
+                </tr>
+                <tr class="result-row">
+                    <td>
+                        <img src="answer/guitar/2.gif" style="width: 256px; height: 160px;">
+                    </td>
+                    <td>
+                        <img src="answer/guitar/4.gif" style="width: 256px; height: 160px;">
+                    </td>
+                    <td>
+                        <img src="answer/guitar/5.gif" style="width: 256px; height: 160px;">
+                    </td>
+                </tr>
+                <tr class="prompt-row">
+                    <td>a musician playing the guitar beside a crackling campfire on a cool night.</td>
+                    <td>an elven bard playing a magical guitar in an enchanted forest.</td>
+                    <td>a warrior playing a glowing guitar that summons lightning in a stormy sky.</td>
+                </tr>
+                <tr class="result-row">
+                    <td>
+                        <img src="answer/helicopter/1.gif" style="width: 256px; height: 160px;">
+                    </td>
+                    <td>
+                        <img src="answer/helicopter/3.gif" style="width: 256px; height: 160px;">
+                    </td>
+                    <td>
+                        <img src="answer/helicopter/7.gif" style="width: 256px; height: 160px;">
+                    </td>
+                </tr>
+                <tr class="prompt-row">
+                    <td>a LEGO helicopter flies in the sky.</td>
+                    <td>a white helicopter flies at night.</td>
+                    <td>a helicopter flies in the rainy day.</td>
+                </tr>
+                <tr class="result-row">
+                    <td>
+                        <img src="answer/waterfall/1.gif" style="width: 256px; height: 160px;">
+                    </td>
+                    <td>
+                        <img src="answer/waterfall/3.gif" style="width: 256px; height: 160px;">
+                    </td>
+                    <td>
+                        <img src="answer/waterfall/7.gif" style="width: 256px; height: 160px;">
+                    </td>
+                </tr>
+                <tr class="prompt-row">
+                    <td>a majestic waterfall cascading into a crystal-clear pool surrounded by lush greenery.</td>
+                    <td>a peaceful waterfall flowing through a serene forest, with cherry blossoms gently floating in the air.</td>
+                    <td>a waterfall flowing in slow motion, droplets shimmering in the sunlight, with a sense of serene beauty.</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
 </div>
-</section>
-<!-- End image carousel -->
 
 
+<div style="background-color: white; margin-right: auto; margin-left: auto;">
+    <div class="root-content" style="padding-top: 10px;width: 65%; padding-bottom: 10px;">
+        <h1 class="section-name">&#127902;&nbsp;&nbsp; Video Editing Results &nbsp;&nbsp;&#127902;</h1>
+        <table style="width: 100%;">
+            <tbody>
+                <tr class="prompt-row">
+                    <td> LVDM </td>
+                    <td> AnimateDiff</td>
+                    <td> LAMP</td>
+                    <td> Ours</td>
+                </tr>
+                <tr class="result-row">
+                    <td>
+                        <img src="assests/run.gif">
+                    </td>
+                    <td>
+                        <img src="assests/inference-a girl in black runs on the road.gif">
+                    </td>
+                    <td>
+                        <img src="assests/inference-a man runs on the road.gif">
+                    </td>
+                    <td>
+                        <img src="assests/inference-a man runs on the road.gif">
+                    </td>
+                </tr>
+                <tr class="prompt-row">
+                    <td></td>
+                    <td>A girl in black runs on the road.</td>
+                    <td>A man runs on the road.</td>
+                    <td></td>
+                </tr>
+                <tr class="result-row">
+                    <td>
+                        <img src="assests/dance.gif">
+                    </td>
+                    <td>
+                        <img src="assests/inference-a man is dancing.gif">
+                    </td>
+                    <td>
+                        <img src="assests/inference-a girl in white is dancing.gif">
+                    </td>
+                    <td>
+                        <img src="assests/inference-a man runs on the road.gif">
+                    </td>
+                </tr>
+                <tr class="prompt-row">
+                    <td></td>
+                    <td>A man is dancing.</td>
+                    <td>A girl in white is dancing.</td>
+                    <td></td>
+                </tr>
 
+                <tr class="result-row">
+                    <td>
+                        <img src="assests/dance.gif">
+                    </td>
+                    <td>
+                        <img src="assests/inference-a man is dancing.gif">
+                    </td>
+                    <td>
+                        <img src="assests/inference-a girl in white is dancing.gif">
+                    </td>
+                    <td>
+                        <img src="assests/inference-a man runs on the road.gif">
+                    </td>
+                </tr>
+                <tr class="prompt-row">
+                    <td></td>
+                    <td>A man is dancing.</td>
+                    <td>A girl in white is dancing.</td>
+                    <td></td>
+                </tr>
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+                <tr class="result-row">
+                    <td>
+                        <img src="assests/dance.gif">
+                    </td>
+                    <td>
+                        <img src="assests/inference-a man is dancing.gif">
+                    </td>
+                    <td>
+                        <img src="assests/inference-a girl in white is dancing.gif">
+                    </td>
+                    <td>
+                        <img src="assests/inference-a man runs on the road.gif">
+                    </td>
+                </tr>
+                <tr class="prompt-row">
+                    <td></td>
+                    <td>A man is dancing.</td>
+                    <td>A girl in white is dancing.</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
+</div>
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+<div style="background-color: #f5f5f5; margin-right: auto; margin-left: auto;">
+    <div class="root-content" style="padding-top: 10px; width: 62%; padding-bottom: 10px;">
+        <h1 class="section-name">&#127916;&nbsp;&nbsp; Text-to-Video Results &nbsp;&nbsp;&#127916;</h1>
+        <div class="slider-container">
+            <div class="slider">
+                <img src="answer/firework/5.gif" alt="Image 1" >
+                <img src="answer/guitar/6.gif" alt="Image 2">
+                <img src="answer/waterfall/5.gif" alt="Image 3">
+                <img src="answer/waterfall/6.gif" alt="Image 4">
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
     </div>
-  </div>
-</section>
-<!-- End video carousel -->
+<div style="background-color: #f5f5f5; margin-right: auto; margin-left: auto;">
 
+<script>
+    let currentIndex = 0;
+    const slider = document.querySelector('.slider');
+    const totalSlides = slider.children.length;
 
+    function showSlide(index) {
+        // 防止越界
+        if (index >= totalSlides) {
+            currentIndex = 0;
+        } else if (index < 0) {
+            currentIndex = totalSlides - 1;
+        } else {
+            currentIndex = index;
+        }
+        // 根据当前索引移动图片
+        slider.style.transform = `translateX(${-currentIndex * 100}%)`;
+    }
 
+    function nextSlide() {
+        showSlide(currentIndex + 1);
+    }
 
+    function prevSlide() {
+        showSlide(currentIndex - 1);
+    }
+</script>
 
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
