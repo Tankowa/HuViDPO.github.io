@@ -25,11 +25,7 @@
 
 
     <title>DPVDM</title>
-<<<<<<< HEAD
-    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-=======
 
->>>>>>> 75a4790 (Initial commit)
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
     rel="stylesheet">
 
@@ -283,11 +279,7 @@
 
 <div style="background-color: white; margin-right: auto; margin-left: auto;">
     <div class="root-content" style="padding-top: 10px;width: 65%; padding-bottom: 10px;">
-<<<<<<< HEAD
-        <h1 class="section-name">&#127902;&nbsp;&nbsp; Video Editing Results &nbsp;&nbsp;&#127902;</h1>
-=======
         <h1 class="section-name">&#127902;&nbsp;&nbsp; Qualitative comparison with VDM, AnimateDiff and LAMP&nbsp;&nbsp;&#127902;</h1>
->>>>>>> 75a4790 (Initial commit)
         <table style="width: 100%;">
             <tbody>
                 <tr class="prompt-row">
@@ -298,88 +290,6 @@
                 </tr>
                 <tr class="result-row">
                     <td>
-<<<<<<< HEAD
-                        <img src="assests/run.gif">
-                    </td>
-                    <td>
-                        <img src="assests/inference-a girl in black runs on the road.gif">
-                    </td>
-                    <td>
-                        <img src="assests/inference-a man runs on the road.gif">
-                    </td>
-                    <td>
-                        <img src="assests/inference-a man runs on the road.gif">
-                    </td>
-                </tr>
-                <tr class="prompt-row">
-                    <td></td>
-                    <td>A girl in black runs on the road.</td>
-                    <td>A man runs on the road.</td>
-                    <td></td>
-                </tr>
-                <tr class="result-row">
-                    <td>
-                        <img src="assests/dance.gif">
-                    </td>
-                    <td>
-                        <img src="assests/inference-a man is dancing.gif">
-                    </td>
-                    <td>
-                        <img src="assests/inference-a girl in white is dancing.gif">
-                    </td>
-                    <td>
-                        <img src="assests/inference-a man runs on the road.gif">
-                    </td>
-                </tr>
-                <tr class="prompt-row">
-                    <td></td>
-                    <td>A man is dancing.</td>
-                    <td>A girl in white is dancing.</td>
-                    <td></td>
-                </tr>
-
-                <tr class="result-row">
-                    <td>
-                        <img src="assests/dance.gif">
-                    </td>
-                    <td>
-                        <img src="assests/inference-a man is dancing.gif">
-                    </td>
-                    <td>
-                        <img src="assests/inference-a girl in white is dancing.gif">
-                    </td>
-                    <td>
-                        <img src="assests/inference-a man runs on the road.gif">
-                    </td>
-                </tr>
-                <tr class="prompt-row">
-                    <td></td>
-                    <td>A man is dancing.</td>
-                    <td>A girl in white is dancing.</td>
-                    <td></td>
-                </tr>
-
-                <tr class="result-row">
-                    <td>
-                        <img src="assests/dance.gif">
-                    </td>
-                    <td>
-                        <img src="assests/inference-a man is dancing.gif">
-                    </td>
-                    <td>
-                        <img src="assests/inference-a girl in white is dancing.gif">
-                    </td>
-                    <td>
-                        <img src="assests/inference-a man runs on the road.gif">
-                    </td>
-                </tr>
-                <tr class="prompt-row">
-                    <td></td>
-                    <td>A man is dancing.</td>
-                    <td>A girl in white is dancing.</td>
-                    <td></td>
-                </tr>
-=======
                       <img src="LVDM/birds/2.gif" style="width: 256px; height: 160px;">
                     </td>
                     <td>
@@ -538,56 +448,12 @@
                     <td colspan="4" align="center">a handsome man.</td>
                   </tr>
                 
->>>>>>> 75a4790 (Initial commit)
             </tbody>
         </table>
     </div>
 </div>
 
 
-<<<<<<< HEAD
-<div style="background-color: #f5f5f5; margin-right: auto; margin-left: auto;">
-    <div class="root-content" style="padding-top: 10px; width: 62%; padding-bottom: 10px;">
-        <h1 class="section-name">&#127916;&nbsp;&nbsp; Text-to-Video Results &nbsp;&nbsp;&#127916;</h1>
-        <div class="slider-container">
-            <div class="slider">
-                <img src="answer/firework/5.gif" alt="Image 1" >
-                <img src="answer/guitar/6.gif" alt="Image 2">
-                <img src="answer/waterfall/5.gif" alt="Image 3">
-                <img src="answer/waterfall/6.gif" alt="Image 4">
-            </div>
-            <button class="prev" onclick="prevSlide()">&#10094;</button>
-            <button class="next" onclick="nextSlide()">&#10095;</button>
-        </div>
-    </div>
-<div style="background-color: #f5f5f5; margin-right: auto; margin-left: auto;">
-
-<script>
-    let currentIndex = 0;
-    const slider = document.querySelector('.slider');
-    const totalSlides = slider.children.length;
-
-    function showSlide(index) {
-        // 防止越界
-        if (index >= totalSlides) {
-            currentIndex = 0;
-        } else if (index < 0) {
-            currentIndex = totalSlides - 1;
-        } else {
-            currentIndex = index;
-        }
-        // 根据当前索引移动图片
-        slider.style.transform = `translateX(${-currentIndex * 100}%)`;
-    }
-
-    function nextSlide() {
-        showSlide(currentIndex + 1);
-    }
-
-    function prevSlide() {
-        showSlide(currentIndex - 1);
-    }
-=======
 <!-- 父容器，使用 flexbox 布局 -->
 <div style="display: flex; justify-content: center; background-color: white ;padding: 10px;">
     <!-- 滑动模块 1 -->
@@ -698,7 +564,6 @@
             showSlide(currentIndexes[sliderIndex] - 1);
         });
     });
->>>>>>> 75a4790 (Initial commit)
 </script>
 
 
